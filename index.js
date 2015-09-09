@@ -6,16 +6,18 @@ var permuteDomain = tough.permuteDomain;
 var permutePath = tough.permutePath;
 var util = require('util');
 
-function FileCookieStore(filePath) {
+function FileCookieStore() {
     Store.call(this);
     this.idx = {}; // idx is memory cache
 
     var self = this;
 
-    self.idx = this.idx;
+    self.idx = this.idx || {};
 }
 util.inherits(FileCookieStore, Store);
-exports.FileCookieStore = FileCookieStore;
+module.exports = FileCookieStore;
+
+
 FileCookieStore.prototype.idx = null;
 FileCookieStore.prototype.synchronous = true;
 
