@@ -1,0 +1,28 @@
+{
+  "name": "cookie-mem",
+  "version": "1.0.0",
+  "description": "Quick and dirty hack of https://www.npmjs.com/package/tough-cookie-filestore to ensure cookies can be held and loaded from memory. Good only for cookies that don't need to be persisted on disk.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mugendi/cookie-mem.git"
+  },
+  "keywords": [
+    "cookie",
+    "memory",
+    "request",
+    "http"
+  ],
+  "author": "Anthony Mugendi <ngurumugz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mugendi/cookie-mem/issues"
+  },
+  "homepage": "https://github.com/mugendi/cookie-mem",
+  "dependencies": {
+    "tough-cookie": "^2.0.0"
+  }
+}
